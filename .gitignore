@@ -1,0 +1,7 @@
+/env
+/cogs/__pycache__/*
+.env
+*.wav
+*.mp3
+*.mp4
+*.ogg
