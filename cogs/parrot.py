@@ -68,7 +68,7 @@ class Parrot(commands.Cog):
                 # Check if the bot is connected to a voice channel
                 # Play the TTS message over the voice channel
                 if self.voice_client is not None and self.voice_client.play is not None:
-                    await self.voice_client.play(discord.FFmpegPCMAudio('tts_message.wav'))
+                    self.voice_client.play(discord.FFmpegPCMAudio('tts_message.wav'))
 
 # ~~~~~ Setup ~~~~~
 def setup(bot):
